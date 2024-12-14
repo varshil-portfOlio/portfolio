@@ -2,7 +2,7 @@
 <body>
 
 <h2>HTML Image</h2>
-<img src="1.png">
+<img src="img/1.jpg">
 
 </body>
 </html>
