@@ -3,26 +3,26 @@
 
 
 <img src="img/1.jpg">
-<img src="img/2.jpg">
+<img src="img/2.png">
 
-<img src="img/3.jpg">
+<img src="img/3.png">
 
-<img src="img/4.jpg">
-<img src="img/5.jpg">
-<img src="img/6.jpg">
-<img src="img/7.jpg">
-<img src="img/8.jpg">
-<img src="img/9.jpg">
-<img src="img/10.jpg">
-<img src="img/11.jpg">
-<img src="img/12.jpg">
-<img src="img/13.jpg">
-<img src="img/14.jpg">
-<img src="img/15.jpg">
-<img src="img/16.jpg">
-<img src="img/17.jpg">
-<img src="img/18.jpg">
-<img src="img/19.jpg">
+<img src="img/4.png">
+<img src="img/5.png">
+<img src="img/6.png">
+<img src="img/7.png">
+<img src="img/8.png">
+<img src="img/9.png">
+<img src="img/10.png">
+<img src="img/11.png">
+<img src="img/12.png">
+<img src="img/13.png">
+<img src="img/14.png">
+<img src="img/15.png">
+<img src="img/16.png">
+<img src="img/17.png">
+<img src="img/18.png">
+<img src="img/19.png">
 
 
 </body>
