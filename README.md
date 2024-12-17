@@ -1,12 +1,12 @@
+<!DOCTYPE html>
 <html>
-  <Head>
-    <style>
+<head>
+<style>
 img {
   max-width: 100%;
   height: auto;
 }
 </style>
-  </Head>
 <body>
 
 
