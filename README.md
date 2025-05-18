@@ -2,7 +2,7 @@
 <body>
 
 
-<img src="1.jpg">
+<img src="1.png">
 <img src="img/2.png">
 <img src="img/3.png">
 <img src="img/4.png">
