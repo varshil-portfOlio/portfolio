@@ -9,9 +9,11 @@
 <img src="img/4.png">
 <img src="img/5.png">
 <img src="img/6.png">
-<img src="8.png">
 <img src="7.png">
+<img src="8.png">
+
 <img src="395.png">
+
 <img src="396.png">
 <img src="img/9.png">
 <img src="img/10.png">
