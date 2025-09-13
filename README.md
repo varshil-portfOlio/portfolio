@@ -5,7 +5,7 @@
 <img src="1.jpg">
 <img src="img/22.jpg">
 <img src="img/2.png">
-<img src="img/3.png">
+<img src="img/3.jpg">
 <img src="img/4.png">
 <img src="img/5.png">
 <img src="img/6.png">
