@@ -4525,3 +4525,85 @@ a {
 }
 
 
+.custom-about {
+  /* background: radial-gradient(circle at top, #0e1428, #000); */
+  color: white;
+  padding: 90px 20px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.big-letter {
+  font-size: 280px;
+  font-weight: 900;
+  color: white;
+  margin: 0;
+  opacity: 0.95;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.about-text {
+  line-height: 1.5;
+  color: #ccc;
+  max-width: 760px;
+  font-size: 16px;
+}
+
+.divider {
+  margin: 30px 0;
+  border: 0;
+  height: 1px;
+  background: #333;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.info-grid h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.skills span {
+  display: inline-block;
+  background: #111;
+  border: 1px solid #333;
+  padding: 7px 14px;
+  border-radius: 20px;
+  margin: 6px 6px 0 0;
+  font-size: 13px;
+  color: #ddd;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .big-letter {
+    font-size: 160px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
