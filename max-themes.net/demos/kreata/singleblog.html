@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Blog Details</title>
+    <title>Blog Details - Varshil Prajapati</title>
 
     <!-- CSS FILES -->
     <link href="css/normalize.css" rel="stylesheet" type="text/css" />
@@ -33,11 +33,13 @@
         }
 
         .blog-wrapper {
-            padding: 60px 20px;
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: auto;
         }
 
         .blog-title {
-            font-size: 36px;
+            font-size: 42px;
             margin-bottom: 10px;
         }
 
@@ -48,22 +50,35 @@
 
         .blog-image img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 12px;
         }
 
         .blog-content {
             margin-top: 30px;
-            line-height: 1.8;
+            line-height: 1.9;
+            font-size: 17px;
         }
 
         .back-btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
+            margin-top: 30px;
+            padding: 12px 30px;
             background: #111;
             color: white;
             text-decoration: none;
             border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #f44a01;
+        }
+
+        .author-box {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f7f7f7;
+            border-radius: 10px;
         }
     </style>
 
@@ -71,9 +86,11 @@
 
 <body>
 
+    <!-- HEADER -->
     <div class="header">
         <div class="main-container">
             <nav class="navbar">
+
                 <a href="index.html" class="logo">
                     <img src="images/logo.png" class="logo-image">
                 </a>
@@ -85,59 +102,71 @@
                     <a href="blog.html" class="menu-item">Blog</a>
                     <a href="contact.html" class="menu-item">Contact</a>
                 </div>
+
             </nav>
         </div>
     </div>
 
 
+    <!-- BLOG DETAILS SECTION -->
     <section class="blog-wrapper">
-        <div class="main-container">
 
-            <h1 class="blog-title">Transforming Ideas Into Reality</h1>
+        <h1 class="blog-title">Transforming Ideas Into Reality</h1>
 
-            <div class="blog-meta">
-                Category: Design | Date: 10 March 2025
+        <div class="blog-meta">
+            Category: Graphic Design | Date: 10 March 2025 | By: Varshil Prajapati
+        </div>
+
+        <div class="blog-image">
+            <img src="images/img1.png">
+        </div>
+
+        <div class="blog-content">
+
+            <h2>Introduction</h2>
+
+            <p>
+                In today’s competitive digital world, creativity and strategy play a vital role in building strong brands.  
+                Design is not just about visuals – it is about communication, emotion, and experience.
+            </p>
+
+            <p>
+                Every business has a story, and good design helps tell that story in the most effective way possible.
+            </p>
+
+            <h3>Why Good Design is Important</h3>
+
+            <p>
+                A powerful visual identity helps businesses stand out from the crowd.  
+                Colors, typography, and layouts all work together to create a strong brand presence.
+            </p>
+
+            <p>
+                Professional design builds trust, improves engagement, and delivers real business value.
+            </p>
+
+            <h3>My Approach</h3>
+
+            <p>
+                As a designer, I focus on understanding client goals first.  
+                Then I craft solutions that are not only beautiful but also functional and meaningful.
+            </p>
+
+            <div class="author-box">
+                <strong>About the Author:</strong>
+                <p>
+                    Varshil Prajapati is a Graphic & Portfolio Designer specializing in branding, packaging, and digital design.
+                </p>
             </div>
 
-            <div class="blog-image">
-                <img src="images/img1.png">
-            </div>
-
-            <div class="blog-content">
-
-                <h2>Introduction</h2>
-
-                <p>
-                    In today’s digital world, creativity plays a vital role in brand success.  
-                    Good design helps businesses connect with their audience in meaningful ways.
-                </p>
-
-                <p>
-                    This blog explains how thoughtful design and proper strategy  
-                    can transform simple ideas into powerful visual experiences.
-                </p>
-
-                <h3>Why Design Matters</h3>
-
-                <p>
-                    A strong visual identity builds trust and recognition.  
-                    Every color, shape, and layout choice impacts how people  
-                    feel about your brand.
-                </p>
-
-                <p>
-                    Professional design is not just about making things look good,  
-                    it is about solving real communication problems.
-                </p>
-
-                <a href="blog.html" class="back-btn">Back to Blog</a>
-
-            </div>
+            <a href="blog.html" class="back-btn">Back to Blog</a>
 
         </div>
+
     </section>
 
 
+    <!-- FOOTER -->
     <div class="footer">
         <div class="main-container">
 
