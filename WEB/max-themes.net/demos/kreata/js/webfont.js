@@ -40,3 +40,43 @@ WebFont.load({
         ]
     }
 });
+const slider = document.getElementById("slider");
+const slides = document.querySelectorAll(".slide");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+let index = 0;
+
+function getVisibleSlides(){
+  if(window.innerWidth <= 600) return 1;
+  if(window.innerWidth <= 1024) return 2;
+  return 4;
+}
+
+function updateSlider(){
+  const visible = getVisibleSlides();
+  const slideWidth = slides[0].offsetWidth + 20;
+  slider.style.transform = `translateX(-${index * slideWidth}px)`;
+}
+
+nextBtn.addEventListener("click", () => {
+  const visible = getVisibleSlides();
+  if(index < slides.length - visible){
+    index++;
+    updateSlider();
+  }
+});
+
+prevBtn.addEventListener("click", () => {
+  if(index > 0){
+    index--;
+    updateSlider();
+  }
+});
+
+window.addEventListener("resize", () => {
+  index = 0;
+  updateSlider();
+});
+
+updateSlider();
