@@ -1684,8 +1684,8 @@ a {
   border-radius: 10px;
   width: 100%;
   max-width: 100%;
-  /* min-height: 340px; */
-  /* max-height: 340px; */
+  min-height: 340px;
+  max-height: 340px;
 }
 
 .work-link-div {
@@ -1696,7 +1696,7 @@ a {
 
 .tabs {
   background-color: var(--black);
-  /* padding-top: 150px; */
+  padding-top: 150px;
   padding-bottom: 150px;
 }
 
@@ -1847,7 +1847,7 @@ a {
 .awards {
   background-color: var(--transparent);
   border-top: 3px solid #000;
-  /* padding-top: 130px; */
+  padding-top: 130px;
   padding-bottom: 130px;
 }
 
@@ -1883,7 +1883,7 @@ a {
 
 .clients {
   background-color: var(--black);
-  /* padding-top: 150px; */
+  padding-top: 150px;
   padding-bottom: 40px;
 }
 
@@ -4609,41 +4609,32 @@ a {
 
 body{
   margin:0;
-  background:#000;
-  font-family:Arial;
+  background:#111;
+  font-family:Arial, sans-serif;
 }
 
-/* SECTION */
 .slider-section{
-  padding:80px 0;
-}
-
-/* CONTAINER */
-.slider-wrapper{
-  width:1200px;
-  margin:auto;
+  padding:60px 5%;
   position:relative;
 }
 
-/* VIEWPORT */
-.slider{
+.slider-wrapper{
   overflow:hidden;
 }
 
-/* TRACK */
-.slider-track{
+.slider{
   display:flex;
-  gap:25px;
-  transition:transform 0.5s ease;
+  gap:20px;
+  transition:0.6s ease;
 }
 
-/* CARD */
 .slide{
-  min-width:280px;
-  height:350px;
+  flex:0 0 calc(25% - 15px);
+  aspect-ratio:4 / 5; /* 1080x1350 */
   border-radius:20px;
   overflow:hidden;
-  flex-shrink:0;
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+  transition:0.4s;
 }
 
 .slide img{
@@ -4653,24 +4644,45 @@ body{
   display:block;
 }
 
-/* BUTTONS */
+.slide:hover{
+  transform:translateY(-10px);
+}
+
+/* Buttons */
 .slider-btn{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
-  width:50px;
-  height:50px;
+  background:#fff;
   border:none;
+  width:45px;
+  height:45px;
   border-radius:50%;
-  background:#ffffff33;
-  color:#fff;
-  font-size:22px;
   cursor:pointer;
+  font-size:20px;
+  font-weight:bold;
+  box-shadow:0 10px 20px rgba(0,0,0,0.3);
+  z-index:10;
 }
 
-.slider-btn:hover{
-  background:#ffffff66;
+.prev{
+  left:10px;
 }
 
-.prev{ left:-70px; }
-.next{ right:-70px; }
+.next{
+  right:10px;
+}
+
+/* Tablet */
+@media(max-width:1024px){
+  .slide{
+    flex:0 0 calc(50% - 10px);
+  }
+}
+
+/* Mobile */
+@media(max-width:600px){
+  .slide{
+    flex:0 0 100%;
+  }
+}
